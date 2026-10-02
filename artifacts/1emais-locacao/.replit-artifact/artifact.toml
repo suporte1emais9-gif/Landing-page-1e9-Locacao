@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "1e+9 — Sistema de Locação"
+description = "Landing page responsiva do sistema 1e+9 para empresas de locação de equipamentos da construção civil, com apresentação de recursos e acesso ao teste de 7 dias via WhatsApp."
+version = "1.0.0"
+id = "artifacts/1emais-locacao"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22041
+
+[services.development]
+run = "pnpm --filter @workspace/1emais-locacao run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/1emais-locacao", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/1emais-locacao/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22041"
+BASE_PATH = "/"
