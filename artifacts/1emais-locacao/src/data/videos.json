@@ -1,6 +1,7 @@
 [
   {
     "id": "TJFWiH8wUl0",
+    "sistema": "pos_vendas",
     "titulo": "Como fazer um pós-vendas pelo sistema 1e+9",
     "youtube_url": "https://www.youtube.com/embed/TJFWiH8wUl0",
     "descricao": "Veja a demonstração do fluxo de pós-vendas no sistema 1e+9 e acompanhe o passo a passo mostrado no vídeo.",
@@ -8,6 +9,7 @@
   },
   {
     "id": "qlS6m9M1RJ0",
+    "sistema": "pos_vendas",
     "titulo": "Como editar os textos de pós-vendas",
     "youtube_url": "https://www.youtube.com/embed/qlS6m9M1RJ0",
     "descricao": "Aprenda onde ajustar os textos do módulo de pós-vendas para adaptar as mensagens à comunicação da sua operação.",
@@ -15,6 +17,7 @@
   },
   {
     "id": "RS0RJPeNos4",
+    "sistema": "pos_vendas",
     "titulo": "Como baixar e se cadastrar no sistema 1e+9",
     "youtube_url": "https://www.youtube.com/embed/RS0RJPeNos4",
     "descricao": "Acompanhe as orientações para baixar o sistema 1e+9 e realizar o cadastro inicial.",
@@ -22,6 +25,7 @@
   },
   {
     "id": "fIsTf4GRl9I",
+    "sistema": "pos_vendas",
     "titulo": "Como editar valores dos produtos",
     "youtube_url": "https://www.youtube.com/embed/fIsTf4GRl9I",
     "descricao": "Veja onde localizar os produtos cadastrados e atualizar seus valores no sistema.",
@@ -29,6 +33,7 @@
   },
   {
     "id": "pL_T3GowLd0",
+    "sistema": "pos_vendas",
     "titulo": "Como importar catálogo de produtos",
     "youtube_url": "https://www.youtube.com/embed/pL_T3GowLd0",
     "descricao": "Acompanhe o processo de importação do catálogo de produtos para incluir as informações no sistema.",

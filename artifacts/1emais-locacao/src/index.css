@@ -79,70 +79,70 @@
   --elevate-1: rgba(0, 0, 0, 0.03);
   --elevate-2: rgba(0, 0, 0, 0.08);
 
-  --background: red; /*replace with H S L */
+  --background: 42 35% 96%;
 
-  --foreground: red; /*replace with H S L */
+  --foreground: 219 31% 15%;
 
-  --border: red; /*replace with H S L */
+  --border: 218 20% 86%;
 
-  --card: red; /*replace with H S L */
+  --card: 0 0% 100%;
 
-  --card-foreground: red; /*replace with H S L */
+  --card-foreground: 219 31% 15%;
 
-  --card-border: red; /*replace with H S L */
+  --card-border: 218 20% 88%;
 
-  --sidebar: red; /*replace with H S L */
+  --sidebar: 219 37% 17%;
 
-  --sidebar-foreground: red; /*replace with H S L */
+  --sidebar-foreground: 42 35% 96%;
 
-  --sidebar-border: red; /*replace with H S L */
+  --sidebar-border: 219 24% 28%;
 
-  --sidebar-primary: red; /*replace with H S L */
+  --sidebar-primary: 39 96% 51%;
 
-  --sidebar-primary-foreground: red; /*replace with H S L */
+  --sidebar-primary-foreground: 219 31% 15%;
 
-  --sidebar-accent: red; /*replace with H S L */
+  --sidebar-accent: 219 24% 25%;
 
-  --sidebar-accent-foreground: red; /*replace with H S L */
+  --sidebar-accent-foreground: 42 35% 96%;
 
-  --sidebar-ring: red; /*replace with H S L */
+  --sidebar-ring: 39 96% 51%;
 
-  --popover: red; /*replace with H S L */
+  --popover: 0 0% 100%;
 
-  --popover-foreground: red; /*replace with H S L */
+  --popover-foreground: 219 31% 15%;
 
-  --popover-border: red; /*replace with H S L */
+  --popover-border: 218 20% 86%;
 
-  --primary: red; /*replace with H S L */
+  --primary: 219 37% 17%;
 
-  --primary-foreground: red; /*replace with H S L */
+  --primary-foreground: 42 35% 96%;
 
-  --secondary: red; /*replace with H S L */
+  --secondary: 39 96% 51%;
 
-  --secondary-foreground: red; /*replace with H S L */
+  --secondary-foreground: 219 31% 15%;
 
-  --muted: red; /*replace with H S L */
+  --muted: 216 22% 93%;
 
-  --muted-foreground: red; /*replace with H S L */
+  --muted-foreground: 216 12% 43%;
 
-  --accent: red; /*replace with H S L */
+  --accent: 151 54% 91%;
 
-  --accent-foreground: red; /*replace with H S L */
+  --accent-foreground: 155 60% 24%;
 
-  --destructive: red; /*replace with H S L */
+  --destructive: 1 70% 52%;
 
-  --destructive-foreground: red; /*replace with H S L */
+  --destructive-foreground: 0 0% 100%;
 
-  --input: red; /*replace with H S L */
-  --ring: red; /*replace with H S L */
-  --chart-1: red; /*replace with H S L */
-  --chart-2: red; /*replace with H S L */
-  --chart-3: red; /*replace with H S L */
-  --chart-4: red; /*replace with H S L */
-  --chart-5: red; /*replace with H S L */
+  --input: 218 20% 86%;
+  --ring: 38 96% 50%;
+  --chart-1: 39 96% 51%;
+  --chart-2: 151 43% 41%;
+  --chart-3: 219 37% 25%;
+  --chart-4: 15 68% 62%;
+  --chart-5: 190 45% 55%;
 
-  --app-font-sans: 'Inter', sans-serif;
-  --app-font-serif: Georgia, serif;
+  --app-font-sans: 'DM Sans', sans-serif;
+  --app-font-serif: 'Manrope', sans-serif;
   --app-font-mono: Menlo, monospace;
   --radius: 0.5rem; /* 8px */
   --shadow-2xs: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0); /*replace with H S L */
@@ -228,68 +228,68 @@
   --elevate-1: rgba(255, 255, 255, 0.04);
   --elevate-2: rgba(255, 255, 255, 0.09);
 
-  --background: red; /*replace with H S L */
+  --background: 219 31% 11%;
 
-  --foreground: red; /*replace with H S L */
+  --foreground: 42 35% 96%;
 
-  --border: red; /*replace with H S L */
+  --border: 219 22% 27%;
 
-  --card: red; /*replace with H S L */
+  --card: 219 28% 15%;
 
-  --card-foreground: red; /*replace with H S L */
+  --card-foreground: 42 35% 96%;
 
-  --card-border: red; /*replace with H S L */
+  --card-border: 219 22% 27%;
 
-  --sidebar: red; /*replace with H S L */
+  --sidebar: 219 37% 9%;
 
-  --sidebar-foreground: red; /*replace with H S L */
+  --sidebar-foreground: 42 35% 96%;
 
-  --sidebar-border: red; /*replace with H S L */
+  --sidebar-border: 219 22% 20%;
 
-  --sidebar-primary: red; /*replace with H S L */
+  --sidebar-primary: 39 96% 51%;
 
-  --sidebar-primary-foreground: red; /*replace with H S L */
+  --sidebar-primary-foreground: 219 31% 15%;
 
-  --sidebar-accent: red; /*replace with H S L */
+  --sidebar-accent: 219 24% 18%;
 
-  --sidebar-accent-foreground: red; /*replace with H S L */
+  --sidebar-accent-foreground: 42 35% 96%;
 
-  --sidebar-ring: red; /*replace with H S L */
+  --sidebar-ring: 39 96% 51%;
 
-  --popover: red; /*replace with H S L */
+  --popover: 219 28% 15%;
 
-  --popover-foreground: red; /*replace with H S L */
+  --popover-foreground: 42 35% 96%;
 
-  --popover-border: red; /*replace with H S L */
+  --popover-border: 219 22% 27%;
 
-  --primary: red; /*replace with H S L */
+  --primary: 42 35% 96%;
 
-  --primary-foreground: red; /*replace with H S L */
+  --primary-foreground: 219 31% 15%;
 
-  --secondary: red; /*replace with H S L */
+  --secondary: 39 96% 51%;
 
-  --secondary-foreground: red; /*replace with H S L */
+  --secondary-foreground: 219 31% 15%;
 
-  --muted: red; /*replace with H S L */
+  --muted: 219 22% 22%;
 
-  --muted-foreground: red; /*replace with H S L */
+  --muted-foreground: 216 14% 67%;
 
-  --accent: red; /*replace with H S L */
+  --accent: 155 45% 23%;
 
-  --accent-foreground: red; /*replace with H S L */
+  --accent-foreground: 151 54% 91%;
 
-  --destructive: red; /*replace with H S L */
+  --destructive: 1 70% 52%;
 
-  --destructive-foreground: red; /*replace with H S L */
+  --destructive-foreground: 0 0% 100%;
 
   /* Used as the border around inputs. Dark mode: Should be a border that is light enough to have high contrast when rendered on a --card background. More contrast than standard --border */
-  --input: red; /*replace with H S L */
-  --ring: red; /*replace with H S L */
-  --chart-1: red; /*replace with H S L */
-  --chart-2: red; /*replace with H S L */
-  --chart-3: red; /*replace with H S L */
-  --chart-4: red; /*replace with H S L */
-  --chart-5: red; /*replace with H S L */
+  --input: 219 22% 27%;
+  --ring: 39 96% 51%;
+  --chart-1: 39 96% 51%;
+  --chart-2: 151 43% 41%;
+  --chart-3: 219 37% 25%;
+  --chart-4: 15 68% 62%;
+  --chart-5: 190 45% 55%;
 
   --shadow-2xs: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0);
   --shadow-xs: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0);
@@ -844,4 +844,272 @@ a { color: inherit; text-decoration: none; }
 }
 @media(prefers-reduced-motion:reduce) {
  *,*::before,*::after { scroll-behavior:auto!important; animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important; }
+}
+
+/* Alternância entre as duas frentes de produto */
+.system-switcher {
+  position: relative;
+  z-index: 4;
+  padding: 17px 24px;
+  background: #f0ede4;
+  border-bottom: 1px solid #dfdbcf;
+}
+.switcher-inner {
+  width: min(1160px, 100%);
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+}
+.switcher-label {
+  display: grid;
+  gap: 4px;
+  color: #6e7785;
+  font: 500 9px 'IBM Plex Mono', monospace;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.switcher-label strong {
+  color: #25334a;
+  font: 700 12px 'Manrope', sans-serif;
+  letter-spacing: -.01em;
+  text-transform: none;
+}
+.switcher-options {
+  display: flex;
+  gap: 5px;
+  padding: 5px;
+  border: 1px solid #d8d4c9;
+  border-radius: 9px;
+  background: #e7e4db;
+}
+.switcher-option {
+  display: flex;
+  min-height: 42px;
+  align-items: center;
+  gap: 9px;
+  padding: 0 16px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: transparent;
+  color: #596576;
+  font: 700 12px 'DM Sans', sans-serif;
+  cursor: pointer;
+  transition: background .2s ease, color .2s ease, transform .2s ease;
+}
+.switcher-option:hover { color: #172238; }
+.switcher-option[aria-pressed="true"] {
+  background: #172238;
+  color: #f9f6ee;
+  box-shadow: 0 3px 9px rgba(23,34,56,.13);
+}
+.switcher-option[aria-pressed="true"] svg { color: #f7bd3c; }
+.switcher-option:focus-visible {
+  outline: 3px solid #b98214;
+  outline-offset: 3px;
+}
+.product-view { animation: product-enter .35s both ease-out; }
+@keyframes product-enter {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.post-hero .hero-grid { min-height: 650px; }
+.post-hero h1 { max-width: 620px; }
+.post-hero h1 span { display: block; margin-top: 8px; }
+.post-impact {
+  margin: 21px 0 0;
+  color: #f7c451;
+  font: 700 clamp(18px, 2vw, 23px)/1.4 'Manrope', sans-serif;
+  letter-spacing: -.025em;
+}
+.post-highlight {
+  display: inline-flex;
+  margin-top: 20px;
+  padding: 10px 13px;
+  border-left: 2px solid #f7bd3c;
+  background: rgba(247,183,43,.1);
+  color: #fff2cc;
+  font: 700 15px 'Manrope', sans-serif;
+}
+.resource-line {
+  margin: 20px 0 0;
+  color: #d9dfE8;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .01em;
+}
+.resource-line span { color: #f7bd3c; padding: 0 4px; }
+.post-visual {
+  position: relative;
+  min-height: 395px;
+  display: grid;
+  place-items: center;
+  isolation: isolate;
+}
+.post-visual:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: min(84%, 390px);
+  aspect-ratio: 1;
+  border: 1px solid rgba(247,183,43,.19);
+  border-radius: 50%;
+  box-shadow: 0 0 0 35px rgba(247,183,43,.035), 0 0 0 76px rgba(247,183,43,.025);
+}
+.post-building {
+  width: 210px;
+  height: 228px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 14px 14px 6px 6px;
+  background: linear-gradient(145deg, #334158, #202d43);
+  color: #f7bd3c;
+  box-shadow: 0 28px 70px rgba(0,0,0,.28);
+  transform: translateY(-5px);
+}
+.post-building svg { width: 108px; height: 108px; stroke-width: 1.05; }
+.post-building-caption {
+  margin-top: -27px;
+  color: #f6f3eb;
+  font: 700 11px 'IBM Plex Mono', monospace;
+  letter-spacing: .13em;
+}
+.post-note {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  max-width: 205px;
+  padding: 13px 15px;
+  border: 1px solid rgba(255,255,255,.56);
+  border-radius: 8px;
+  background: #f8f5ed;
+  color: #25334a;
+  box-shadow: 0 14px 35px rgba(0,0,0,.19);
+}
+.post-note svg { color: #a87919; flex: 0 0 auto; }
+.post-note strong { display: block; font: 700 12px 'Manrope', sans-serif; }
+.post-note small { display: block; margin-top: 3px; color: #717b8a; font-size: 10px; }
+.post-note.note-top { top: 28px; right: 0; }
+.post-note.note-bottom { bottom: 31px; left: 0; }
+.post-story {
+  padding: 94px 0 102px;
+  background: #f7f5ef;
+}
+.post-story-grid {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  align-items: start;
+  gap: 76px;
+}
+.post-story-intro { position: sticky; top: 38px; }
+.post-story-intro h2 {
+  max-width: 440px;
+  margin: 17px 0 18px;
+  color: #19253a;
+  font: 800 clamp(32px, 4vw, 47px)/1.08 'Manrope', sans-serif;
+  letter-spacing: -.05em;
+}
+.post-story-intro p,.post-story-copy p {
+  color: #667184;
+  font-size: 14px;
+  line-height: 1.85;
+}
+.post-story-copy {
+  padding: 4px 0 0 28px;
+  border-left: 1px solid #d7d4cb;
+}
+.post-story-copy p:first-child { margin-top: 0; }
+.post-automations {
+  display: grid;
+  gap: 10px;
+  margin: 26px 0 29px;
+}
+.automation-row {
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  align-items: center;
+  gap: 14px;
+  padding: 15px 16px;
+  border: 1px solid #e2dfd6;
+  border-radius: 8px;
+  background: #eeece4;
+  color: #28364c;
+}
+.automation-row > svg { color: #9a6b12; }
+.automation-row strong { display: block; font: 700 13px 'Manrope', sans-serif; }
+.automation-row span { display: block; margin-top: 3px; color: #687386; font-size: 12px; line-height: 1.5; }
+.seller-invite {
+  margin: 28px 0 0!important;
+  color: #19253a!important;
+  font: 800 26px/1.2 'Manrope', sans-serif!important;
+  letter-spacing: -.04em;
+}
+.post-trial-copy { max-width: 660px; }
+.post-empty {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  padding: 48px 24px;
+  border: 1px dashed #59677b;
+  border-radius: 10px;
+  color: #f4f1e9;
+  text-align: center;
+}
+.post-empty svg { color: #f7bd3c; }
+.post-empty strong { font: 700 16px 'Manrope', sans-serif; }
+.post-empty p { max-width: 430px; margin: 0; color: #b9c2d0; font-size: 13px; line-height: 1.65; }
+.machine-badge {
+  position: absolute;
+  left: -5px;
+  top: 45px;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 11px 14px;
+  border: 1px solid rgba(255,255,255,.58);
+  border-radius: 7px;
+  background: #f8f5ed;
+  color: #26364d;
+  box-shadow: 0 14px 32px rgba(0,0,0,.18);
+  font: 700 11px 'Manrope', sans-serif;
+}
+.machine-badge svg { color: #a87919; }
+.rental-empty {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  padding: 46px 24px;
+  border: 1px dashed #c9c5ba;
+  border-radius: 10px;
+  background: #efede5;
+  color: #24334a;
+  text-align: center;
+}
+.rental-empty svg { color: #947019; }
+.rental-empty strong { font: 700 16px 'Manrope', sans-serif; }
+.rental-empty p { max-width: 430px; margin: 0; color: #687386; font-size: 13px; line-height: 1.65; }
+
+@media (max-width: 760px) {
+  .switcher-inner { display: grid; justify-content: stretch; gap: 12px; }
+  .switcher-options { display: grid; grid-template-columns: 1fr 1fr; }
+  .switcher-option { justify-content: center; min-height: 50px; padding: 8px 10px; text-align: center; line-height: 1.35; }
+  .switcher-option span { max-width: 175px; }
+  .post-story-grid { grid-template-columns: 1fr; gap: 24px; }
+  .post-story-intro { position: static; }
+  .post-story-copy { padding-left: 20px; }
+}
+@media (max-width: 480px) {
+  .system-switcher { padding: 14px 18px; }
+  .switcher-options { grid-template-columns: 1fr; }
+  .switcher-option { justify-content: flex-start; }
+  .post-visual { min-height: 330px; }
+  .post-building { width: 178px; height: 205px; }
+  .machine-badge { left: 0; top: 22px; }
+  .post-note { max-width: 174px; padding: 11px; }
+  .post-note.note-top { top: 7px; right: -3px; }
+  .post-note.note-bottom { bottom: 8px; left: -3px; }
+  .post-story { padding: 72px 0; }
 }
