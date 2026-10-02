@@ -646,6 +646,145 @@ a { color: inherit; text-decoration: none; }
 .floating-whatsapp { position:fixed; z-index:20; right:24px; bottom:23px; display:grid; place-items:center; width:56px;height:56px;border-radius:50%;background:#19b66d;color:white;box-shadow:0 8px 25px rgba(13,100,61,.3); transition:transform .2s ease; }
 .floating-whatsapp:hover { transform:translateY(-3px) scale(1.04); }
 .floating-whatsapp:focus-visible, a:focus-visible { outline:3px solid #f7b72b; outline-offset:4px; }
+
+/* Conteúdos: aprendizado prático para a rotina de locação */
+.content-section {
+  position: relative;
+  overflow: hidden;
+  background: #172238;
+  color: #f7f5ef;
+}
+.content-section:before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(247,183,43,.55), transparent);
+}
+.content-section .container { position: relative; z-index: 1; }
+.content-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 42px;
+}
+.content-heading h2 {
+  margin: 15px 0 10px;
+  color: #f7f5ef;
+  font: 800 clamp(34px,4.5vw,50px)/1.08 Manrope,sans-serif;
+  letter-spacing: -.05em;
+}
+.content-heading p {
+  max-width: 570px;
+  margin: 0;
+  color: #b9c2d0;
+  font-size: 15px;
+  line-height: 1.75;
+}
+.content-mark {
+  flex: 0 0 auto;
+  margin-bottom: 7px;
+  color: #8793a5;
+  font: 500 10px 'IBM Plex Mono',monospace;
+  letter-spacing: .12em;
+}
+.content-mark > span { color: #f7b72b; }
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 430px), 1fr));
+  gap: 22px;
+}
+.video-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #37445a;
+  border-radius: 12px;
+  background: #202d42;
+  box-shadow: 0 18px 44px rgba(4,10,20,.18);
+  transition: transform .24s ease, border-color .24s ease;
+}
+.video-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(247,183,43,.55);
+}
+.video-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #101a2a;
+}
+.video-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.video-frame iframe:focus-visible {
+  outline: 3px solid #f7b72b;
+  outline-offset: -3px;
+}
+.video-card-body { padding: 23px 24px 24px; }
+.video-category {
+  display: inline-flex;
+  align-items: center;
+  min-height: 25px;
+  padding: 0 10px;
+  border: 1px solid rgba(247,183,43,.35);
+  border-radius: 20px;
+  background: rgba(247,183,43,.1);
+  color: #f7c85f;
+  font: 500 9px 'IBM Plex Mono',monospace;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+.video-card h3 {
+  margin: 14px 0 9px;
+  color: #f7f5ef;
+  font: 700 20px/1.3 Manrope,sans-serif;
+  letter-spacing: -.025em;
+}
+.video-card p {
+  min-height: 52px;
+  margin: 0;
+  color: #b9c2d0;
+  font-size: 13px;
+  line-height: 1.7;
+}
+.video-whatsapp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 21px;
+  padding: 13px 14px;
+  border: 1px solid rgba(75,190,126,.38);
+  border-radius: 7px;
+  background: rgba(31,163,97,.13);
+  color: #a9e1bf;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.4;
+  transition: background .2s ease, border-color .2s ease;
+}
+.video-whatsapp svg:first-child { flex: 0 0 auto; }
+.video-whatsapp svg:last-child { flex: 0 0 auto; margin-left: auto; }
+.video-whatsapp:hover {
+  border-color: #48bd7c;
+  background: rgba(31,163,97,.23);
+}
+
+@media (max-width: 700px) {
+  .content-section { padding: 78px 0; }
+  .content-heading { display: block; margin-bottom: 30px; }
+  .content-mark { display: inline-block; margin-top: 18px; }
+  .video-grid { grid-template-columns: 1fr; gap: 17px; }
+  .video-card-body { padding: 20px; }
+  .video-card p { min-height: 0; }
+  .video-whatsapp { font-size: 11px; }
+}
 .reveal { animation:rise-in .7s both cubic-bezier(.2,.75,.2,1); }
 @keyframes rise-in { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:translateY(0); } }
 @keyframes float { 0%,100% { transform:translateY(0) } 50% { transform:translateY(-7px) } }

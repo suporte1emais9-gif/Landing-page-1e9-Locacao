@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import videos from './data/videos.json';
 import {
   ArrowRight,
   BadgeCheck,
@@ -151,6 +152,7 @@ function App() {
           <div className="nav-links">
             <a href="#sistema" data-testid="link-nav-sistema">O sistema</a>
             <a href="#recursos" data-testid="link-nav-recursos">Recursos</a>
+            <a href="#conteudos" data-testid="link-nav-conteudos">Conteúdos</a>
             <a href="#teste-gratis" data-testid="link-nav-teste">Teste grátis</a>
           </div>
           <a className="nav-cta" href={CONTACT_URL} target="_blank" rel="noreferrer" data-testid="link-nav-contato">
@@ -198,6 +200,56 @@ function App() {
                   <span className="feature-index">0{index + 1}</span>
                 </article>
               ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="section content-section" id="conteudos" aria-labelledby="content-title">
+          <div className="container">
+            <div className="content-heading">
+              <div>
+                <div className="eyebrow">Aprenda no Prático</div>
+                <h2 id="content-title">Nossos Conteúdos</h2>
+                <p>Conheça recursos e aprendizados para tornar a gestão da sua operação mais simples.</p>
+              </div>
+              <span className="content-mark" aria-hidden="true">1e<span>+</span>9 / CONTEÚDOS</span>
+            </div>
+            <div className="video-grid">
+              {videos.map((video) => {
+                const whatsappMessage = `Olá, gostaria de saber mais sobre o recurso "${video.titulo}" da categoria ${video.categoria}.`;
+                const whatsappUrl = `https://wa.me/5517988173773?text=${encodeURIComponent(whatsappMessage)}`;
+                return (
+                  <article className="video-card" key={video.id} data-testid={`card-conteudo-${video.id}`}>
+                    <div className="video-frame">
+                      <iframe
+                        src={video.youtube_url}
+                        title={`${video.titulo} — playlist de conteúdos da 1e+9`}
+                        loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        allowFullScreen
+                        tabIndex={0}
+                      />
+                    </div>
+                    <div className="video-card-body">
+                      <span className="video-category">{video.categoria}</span>
+                      <h3>{video.titulo}</h3>
+                      <p>{video.descricao}</p>
+                      <a
+                        className="video-whatsapp"
+                        href={whatsappUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        data-testid={`link-whatsapp-conteudo-${video.id}`}
+                      >
+                        <MessageCircle size={16} />
+                        Chamar no WhatsApp sobre este recurso
+                        <ArrowRight size={15} />
+                      </a>
+                    </div>
+                  </article>
+                );
+              })}
             </div>
           </div>
         </section>
@@ -257,6 +309,7 @@ function App() {
               <div className="footer-links">
                 <a href="#sistema" data-testid="link-footer-sistema">O sistema <ChevronRight size={12} /></a>
                 <a href="#recursos" data-testid="link-footer-recursos">Recursos <ChevronRight size={12} /></a>
+                <a href="#conteudos" data-testid="link-footer-conteudos">Conteúdos <ChevronRight size={12} /></a>
                 <a href="#teste-gratis" data-testid="link-footer-teste">Teste grátis <ChevronRight size={12} /></a>
               </div>
             </div>
