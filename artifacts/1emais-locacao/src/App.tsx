@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import videos from './data/videos.json';
 import {
   ArrowRight,
+  Armchair,
   BadgeCheck,
   Banknote,
   BellRing,
@@ -17,12 +18,15 @@ import {
   LayoutDashboard,
   MessageCircle,
   PackageCheck,
+  PartyPopper,
   Send,
+  Shirt,
   ShieldCheck,
   Smartphone,
   Tractor,
   Truck,
   Wallet,
+  Warehouse,
   Wrench,
 } from 'lucide-react';
 
@@ -33,6 +37,34 @@ const TRIAL_URL =
 const POST_SALES_TRIAL_URL =
   `https://wa.me/5517988173773?text=${encodeURIComponent('Olá, quero fazer um teste grátis por 7 dias do sistema de Pós-Vendas & Multipropriedade.')}`;
 const CONTACT_URL = 'https://wa.me/5517988173773';
+
+const rentalSegments = [
+  {
+    icon: Tractor,
+    title: 'Equipamentos & Maquinários',
+    description: 'Construção civil, ferramentas e andaimes.',
+  },
+  {
+    icon: Armchair,
+    title: 'Mesas & Cadeiras',
+    description: 'Mobiliário completo para festas e eventos.',
+  },
+  {
+    icon: Shirt,
+    title: 'Ternos & Vestidos de Noiva',
+    description: 'Trajes finos e vestuário com controle de datas de prova e devolução.',
+  },
+  {
+    icon: PartyPopper,
+    title: 'Brinquedos para Festas',
+    description: 'Pula-pula, piscina de bolinhas, brinquedos infláveis e entretenimento.',
+  },
+  {
+    icon: Warehouse,
+    title: 'Controle de Almoxarifado Interno',
+    description: 'Rastreabilidade completa de ferramentas e insumos da empresa.',
+  },
+];
 
 const features = [
   {
@@ -59,6 +91,11 @@ const features = [
     icon: Send,
     title: 'Régua de Cobrança Automática',
     description: 'Vencimentos e boletos enviados pelo WhatsApp do cliente.',
+  },
+  {
+    icon: Warehouse,
+    title: 'Almoxarifado & Rastreabilidade Total',
+    description: 'Gestão de Almoxarifado e Retiradas: Saiba exatamente quem pegou o item, o que pegou, a data/hora da retirada e a confirmação quando o item for devolvido. Fim das perdas de ferramentas e equipamentos no seu estoque.',
   },
 ];
 
@@ -219,7 +256,7 @@ function RentalPage() {
             <div className="reveal">
               <div className="eyebrow">Sistema de gestão para locadoras</div>
               <h1>Pare de perder dinheiro com <span>planilhas de locação bagunçadas!</span></h1>
-              <p className="hero-copy">Se você trabalha com locação de equipamentos e maquinários para a construção civil, sabe que o controle de estoque e o financeiro são os maiores gargalos do negócio. Nosso sistema foi desenhado especificamente para resolver essa dor.</p>
+              <p className="hero-copy">Seja para equipamentos da construção civil, eventos ou almoxarifado, o controle de estoque e o financeiro são os maiores gargalos do negócio. Nosso sistema foi desenhado para resolver essa dor em qualquer segmento de locação.</p>
               <div className="hero-actions">
                 <a className="button-primary" href={TRIAL_URL} target="_blank" rel="noreferrer" data-testid="link-trial-hero">Testar grátis por 7 dias <ArrowRight size={16} /></a>
                 <a className="button-outline" href={CONTACT_URL} target="_blank" rel="noreferrer" data-testid="link-contact-hero"><MessageCircle size={16} /> Falar com um especialista</a>
@@ -227,6 +264,25 @@ function RentalPage() {
               <div className="trial-note"><ShieldCheck size={14} /> Acesso completo por 7 dias. Sem cartão de crédito.</div>
             </div>
             <DashboardMockup />
+          </div>
+        </section>
+
+        <section className="section rental-segments" aria-labelledby="segments-title">
+          <div className="container">
+            <div className="segments-heading">
+              <div className="eyebrow" style={{ color: '#8e6715' }}>Locação em diferentes segmentos</div>
+              <h2 id="segments-title">Ideal para o seu tipo de negócio</h2>
+              <p>Organize locações, estoque e devoluções com uma solução que acompanha a variedade da sua operação.</p>
+            </div>
+            <div className="segment-grid">
+              {rentalSegments.map(({ icon: Icon, title, description }, index) => (
+                <article className="segment-card" key={title} data-testid={`segment-${index + 1}`}>
+                  <div className="segment-icon"><Icon size={21} strokeWidth={1.8} aria-hidden="true" /></div>
+                  <h3>{title}</h3>
+                  <p>{description}</p>
+                </article>
+              ))}
+            </div>
           </div>
         </section>
 
