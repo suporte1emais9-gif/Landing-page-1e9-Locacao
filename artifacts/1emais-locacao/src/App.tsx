@@ -100,6 +100,95 @@ const features = [
   },
 ];
 
+const rentalWorkflow = [
+  {
+    icon: ClipboardList,
+    title: '01. Cadastro Simplificado',
+    description: 'Cadastre seus equipamentos, clientes e tabelas de preços em minutos. Uma interface intuitiva pensada para quem busca praticidade no dia a dia.',
+  },
+  {
+    icon: FileText,
+    title: '02. Contrato & Assinatura Digital',
+    description: 'Gere o contrato e colete a assinatura digital diretamente na tela do celular do seu motorista ou envie o link via WhatsApp. Chega de papelada!',
+  },
+  {
+    icon: Truck,
+    title: '03. Logística & Vistoria com Foto',
+    description: 'Acompanhe entregas e retiradas em tempo real. O entregador registra fotos do equipamento na entrega e na devolução diretamente no aplicativo.',
+  },
+  {
+    icon: LayoutDashboard,
+    title: '04. Painel de Controle Unificado',
+    description: 'Acompanhe faturamento, contratos a vencer, devoluções pendentes e inadimplência em um único Dashboard visual e inteligente.',
+  },
+];
+
+const rentalBenefits = [
+  {
+    icon: LayoutDashboard,
+    title: 'Visão 360° do seu Negócio',
+    description: 'Esqueça a busca de dados em várias planilhas. Saiba faturamento do dia, contratos ativos, equipamentos em obra e resultados financeiros em tempo real.',
+  },
+  {
+    icon: BellRing,
+    title: 'Cobrança e Renovações Inteligentes',
+    description: 'Identifique contratos próximos ao vencimento e clientes em atraso. Envie alertas de cobrança e opções de renovação por WhatsApp com apenas um clique.',
+  },
+  {
+    icon: Smartphone,
+    title: 'Assinatura Rápida sem Burocracia',
+    description: 'Elimine a impressão de documentos. O cliente assina digitalmente no ato da entrega, garantindo validade jurídica e agilidade.',
+  },
+  {
+    icon: Warehouse,
+    title: 'Rastreabilidade do Acervo e Almoxarifado',
+    description: 'Saiba exatamente onde está cada máquina, quem retirou do estoque e o status de devolução, evitando perdas de patrimônio.',
+  },
+];
+
+const rentalModules = [
+  {
+    icon: FileText,
+    title: '01 | Gestão Completa de Contratos',
+    description: 'Controle de datas, valores, renovações instantâneas e histórico de cada cliente.',
+  },
+  {
+    icon: Truck,
+    title: '02 | App para Motoristas & Logística',
+    description: 'Gerenciamento de entregas e recolhimentos no campo, com fotos de vistoria e assinatura.',
+  },
+  {
+    icon: BadgeCheck,
+    title: '03 | Comprovação Digital no Campo',
+    description: 'Confirmação de entrega em tempo real sincronizada instantaneamente com o sistema.',
+  },
+  {
+    icon: CircleDollarSign,
+    title: '04 | Dashboard Financeiro & Metras',
+    description: 'Faturamento, tíquete médio, histórico de receitas e controle de inadimplência.',
+  },
+  {
+    icon: Wrench,
+    title: '05 | Manutenção Preventiva e Corretiva',
+    description: 'Mantenha o histórico de revisões de cada equipamento, controlando peças, custos e dias de inatividade.',
+  },
+];
+
+const rentalFaqs = [
+  {
+    question: 'Minha equipe não leva jeito com tecnologia. Vamos conseguir usar?',
+    answer: 'Com certeza! O 1e+9 foi desenhado para ser simples e direto ao ponto. Qualquer pessoa da sua equipe aprende a operar o sistema em poucos minutos, sem necessidade de treinamentos longos.',
+  },
+  {
+    question: 'Trocar de sistema não vai sair muito caro?',
+    answer: 'Oferecemos a melhor relação custo-benefício do mercado, com planos acessíveis que se pagam na economia de tempo e na redução de perdas. Além disso, você pode testar por 7 dias grátis, sem compromisso e sem cartão de crédito.',
+  },
+  {
+    question: 'Como funciona o suporte se eu tiver dúvidas no dia a dia?',
+    answer: 'Você fala diretamente com a nossa equipe especializada pelo WhatsApp de segunda a sábado. Atendimento humano, rápido e sem robôs ou filas demoradas.',
+  },
+];
+
 function normalizeCategory(value: string) {
   return value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('pt-BR').trim();
 }
@@ -339,6 +428,88 @@ function RentalPage() {
               <div className="ledger-item"><span><Banknote size={13} style={{ verticalAlign: 'middle', marginRight: 7 }} />Contas a receber</span><strong>Acompanhe</strong></div>
               <div className="ledger-item"><span><Wallet size={13} style={{ verticalAlign: 'middle', marginRight: 7 }} />Contas a pagar</span><strong>Acompanhe</strong></div>
               <div className="ledger-item"><span><FileText size={13} style={{ verticalAlign: 'middle', marginRight: 7 }} />Cobranças enviadas</span><span className="ledger-tag">ACOMPANHÁVEIS</span></div>
+            </div>
+          </div>
+        </section>
+
+        <section className="section rental-workflow" aria-labelledby="rental-workflow-title">
+          <div className="container">
+            <div className="section-heading rental-addition-heading">
+              <div className="eyebrow" style={{ color: '#8e6715' }}>Uma operação sem etapas perdidas</div>
+              <h2 id="rental-workflow-title">Do orçamento ao fechamento: sua operação 100% no automático</h2>
+              <p>Simplifique a gestão da sua locadora sem complicações manuais.</p>
+            </div>
+            <div className="workflow-grid">
+              {rentalWorkflow.map(({ icon: Icon, title, description }, index) => (
+                <article className="workflow-card" key={title} data-testid={`workflow-step-${index + 1}`}>
+                  <div className="workflow-card-top">
+                    <span className="workflow-icon"><Icon size={20} strokeWidth={1.8} aria-hidden="true" /></span>
+                    <span className="workflow-number">ETAPA 0{index + 1}</span>
+                  </div>
+                  <h3>{title}</h3>
+                  <p>{description}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="section rental-impact" aria-labelledby="rental-impact-title">
+          <div className="container">
+            <div className="section-heading rental-addition-heading">
+              <div className="eyebrow">Mais controle, todos os dias</div>
+              <h2 id="rental-impact-title">O impacto real do Sistema 1e+9 na sua rotina</h2>
+            </div>
+            <div className="impact-list">
+              {rentalBenefits.map(({ icon: Icon, title, description }, index) => (
+                <article className="impact-row" key={title} data-testid={`operational-benefit-${index + 1}`}>
+                  <span className="impact-icon"><Icon size={21} strokeWidth={1.8} aria-hidden="true" /></span>
+                  <div className="impact-copy"><h3>{title}</h3><p>{description}</p></div>
+                  <span className="impact-index">0{index + 1}</span>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="section rental-modules" aria-labelledby="rental-modules-title">
+          <div className="container">
+            <div className="modules-heading">
+              <div>
+                <div className="eyebrow" style={{ color: '#f7c451' }}>Tudo conectado à sua operação</div>
+                <h2 id="rental-modules-title">Recursos completos para escalar sua locadora</h2>
+              </div>
+              <p>Comercial, campo, equipamentos e financeiro trabalhando juntos em uma rotina mais previsível.</p>
+            </div>
+            <div className="modules-grid">
+              {rentalModules.map(({ icon: Icon, title, description }, index) => (
+                <article className="module-card" key={title} data-testid={`rental-module-${index + 1}`}>
+                  <span className="module-icon"><Icon size={20} strokeWidth={1.8} aria-hidden="true" /></span>
+                  <h3>{title}</h3>
+                  <p>{description}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="section rental-faq" aria-labelledby="rental-faq-title">
+          <div className="container faq-layout">
+            <div className="faq-intro">
+              <div className="eyebrow" style={{ color: '#8e6715' }}>Conte com a gente</div>
+              <h2 id="rental-faq-title">Ainda com dúvidas? Nós ajudamos você a decidir</h2>
+              <p>Veja respostas diretas para começar com segurança e escolher o melhor caminho para sua locadora.</p>
+              <a className="button-primary" href={CONTACT_URL} target="_blank" rel="noreferrer" data-testid="link-rental-faq-contact">
+                Falar com um especialista <ArrowRight size={15} />
+              </a>
+            </div>
+            <div className="faq-list">
+              {rentalFaqs.map(({ question, answer }, index) => (
+                <details className="faq-item" key={question} data-testid={`rental-faq-${index + 1}`}>
+                  <summary><span>{question}</span><ChevronRight size={18} aria-hidden="true" /></summary>
+                  <p>{answer}</p>
+                </details>
+              ))}
             </div>
           </div>
         </section>

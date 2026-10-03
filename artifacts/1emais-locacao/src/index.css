@@ -508,6 +508,62 @@
   --sidebar-ring: 39 96% 51%;
 }
 
+.rental-workflow { background:#f7f5ef; }
+.rental-addition-heading { margin-bottom:42px; }
+.rental-addition-heading h2 { max-width:790px; }
+.rental-addition-heading p { max-width:610px; margin:0; color:#697385; line-height:1.75; font-size:15px; }
+.workflow-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:15px; }
+.workflow-card { min-height:245px; padding:23px 21px; background:#fff; border:1px solid #e1dfd7; border-radius:11px; box-shadow:0 10px 26px rgba(27,39,58,.045); }
+.workflow-card-top { display:flex; justify-content:space-between; align-items:center; margin-bottom:25px; }
+.workflow-icon,.impact-icon,.module-icon { display:grid; place-items:center; width:43px; height:43px; flex:none; border-radius:10px; background:#fbe9ba; color:#826014; }
+.workflow-number { color:#989b9d; font:500 9px 'IBM Plex Mono',monospace; letter-spacing:.09em; }
+.workflow-card h3,.impact-row h3,.module-card h3 { margin:0 0 9px; color:#19253a; font:700 16px/1.4 Manrope,sans-serif; letter-spacing:-.025em; }
+.workflow-card p,.impact-row p,.module-card p { margin:0; color:#697385; font-size:13px; line-height:1.7; }
+.rental-impact { background:#e9e7de; }
+.impact-list { border-top:1px solid #d3d2cb; }
+.impact-row { display:grid; grid-template-columns:48px 1fr 34px; gap:19px; align-items:center; padding:22px 6px; border-bottom:1px solid #d3d2cb; }
+.impact-row:nth-child(2n) .impact-icon { color:#26364d; background:#d9dfe3; }
+.impact-row h3 { margin-bottom:5px; }
+.impact-index { align-self:start; padding-top:7px; text-align:right; color:#989b9d; font:500 10px 'IBM Plex Mono',monospace; }
+.rental-modules { background:#19263a; color:#f6f3eb; }
+.modules-heading { display:flex; align-items:flex-end; justify-content:space-between; gap:50px; margin-bottom:43px; }
+.modules-heading h2 { max-width:650px; margin:16px 0 0; color:#f6f3eb; font:800 clamp(32px,4vw,47px)/1.1 Manrope,sans-serif; letter-spacing:-.05em; }
+.modules-heading > p { max-width:380px; margin:0 0 3px; color:#b3bdc9; font-size:14px; line-height:1.75; }
+.modules-grid { display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:14px; }
+.module-card { grid-column:span 2; min-height:212px; padding:22px; border:1px solid #3b4658; border-radius:10px; background:#222f44; }
+.module-card:nth-child(4) { grid-column:2 / span 2; }
+.module-card:nth-child(5) { grid-column:4 / span 2; }
+.module-icon { margin-bottom:19px; }
+.module-card h3 { color:#f6f3eb; }
+.module-card p { color:#b0bac7; }
+.rental-faq { background:#f7f5ef; }
+.faq-layout { display:grid; grid-template-columns:.8fr 1.2fr; gap:80px; align-items:start; }
+.faq-intro h2 { margin:16px 0 13px; font:800 clamp(33px,4vw,46px)/1.08 Manrope,sans-serif; letter-spacing:-.05em; color:#19253a; }
+.faq-intro > p { margin:0; color:#697385; font-size:14px; line-height:1.75; }
+.faq-intro .button-primary { margin-top:23px; }
+.faq-list { border-top:1px solid #d8d9d5; }
+.faq-item { border-bottom:1px solid #d8d9d5; }
+.faq-item summary { display:flex; align-items:center; justify-content:space-between; gap:18px; padding:21px 2px; color:#19253a; cursor:pointer; list-style:none; font:700 15px/1.5 Manrope,sans-serif; }
+.faq-item summary::-webkit-details-marker { display:none; }
+.faq-item summary svg { flex:none; color:#8e6715; transition:transform .2s ease; }
+.faq-item[open] summary svg { transform:rotate(90deg); }
+.faq-item > p { max-width:650px; margin:-5px 30px 22px 2px; color:#697385; font-size:13px; line-height:1.75; }
+@media (max-width: 900px) {
+  .workflow-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .modules-heading { align-items:flex-start; flex-direction:column; gap:17px; }
+  .faq-layout { gap:44px; }
+}
+@media (max-width: 680px) {
+  .workflow-grid { grid-template-columns:1fr; }
+  .workflow-card { min-height:0; }
+  .workflow-card-top { margin-bottom:18px; }
+  .impact-row { grid-template-columns:42px 1fr 25px; gap:13px; align-items:start; padding:19px 0; }
+  .impact-icon { width:39px; height:39px; }
+  .modules-grid { grid-template-columns:1fr; }
+  .module-card,.module-card:nth-child(4),.module-card:nth-child(5) { grid-column:1; min-height:0; }
+  .faq-layout { grid-template-columns:1fr; gap:34px; }
+}
+
 :root { font-family: 'DM Sans', sans-serif; font-synthesis: none; text-rendering: optimizeLegibility; }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
