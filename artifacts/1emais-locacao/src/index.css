@@ -708,6 +708,9 @@ a { color: inherit; text-decoration: none; }
   transform: translateY(-3px);
   border-color: rgba(247,183,43,.55);
 }
+.video-card-heading {
+  padding: 20px 24px 14px;
+}
 .video-frame {
   position: relative;
   width: 100%;
@@ -726,7 +729,7 @@ a { color: inherit; text-decoration: none; }
   outline: 3px solid #f7b72b;
   outline-offset: -3px;
 }
-.video-card-body { padding: 23px 24px 24px; }
+.video-card-body { padding: 16px 24px 24px; }
 .video-category {
   display: inline-flex;
   align-items: center;
@@ -741,7 +744,7 @@ a { color: inherit; text-decoration: none; }
   text-transform: uppercase;
 }
 .video-card h3 {
-  margin: 14px 0 9px;
+  margin: 10px 0 0;
   color: #f7f5ef;
   font: 700 20px/1.3 Manrope,sans-serif;
   letter-spacing: -.025em;

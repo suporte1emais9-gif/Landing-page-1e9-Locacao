@@ -179,10 +179,15 @@ function VideoGrid({ system }: { system: ProductSystem }) {
         const whatsappUrl = `https://wa.me/5517988173773?text=${encodeURIComponent(whatsappMessage)}`;
         return (
           <article className="video-card" key={video.id} data-testid={`card-conteudo-${video.id}`}>
+            <div className="video-card-heading">
+              <span className="video-category">{video.categoria}</span>
+              <h3 id={`video-title-${video.id}`}>{video.titulo}</h3>
+            </div>
             <div className="video-frame">
               <iframe
                 src={video.youtube_url}
-                title={`${video.titulo} — playlist de conteúdos da 1e+9`}
+                title={video.titulo}
+                aria-labelledby={`video-title-${video.id}`}
                 loading="lazy"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 referrerPolicy="strict-origin-when-cross-origin"
@@ -191,8 +196,6 @@ function VideoGrid({ system }: { system: ProductSystem }) {
               />
             </div>
             <div className="video-card-body">
-              <span className="video-category">{video.categoria}</span>
-              <h3>{video.titulo}</h3>
               <p>{video.descricao}</p>
               <a className="video-whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer" data-testid={`link-whatsapp-conteudo-${video.id}`}>
                 <MessageCircle size={16} />
@@ -448,7 +451,7 @@ function App() {
             <div>
               <h3>Fale com a gente</h3>
               <div className="footer-contact">
-                <a href="https://1emais9.com.br" target="_blank" rel="noreferrer" data-testid="link-footer-site"><ArrowRight size={14} /> 1emais9.com.br</a>
+                <a href="https://1emais.com.br" target="_blank" rel="noreferrer" data-testid="link-footer-site"><ArrowRight size={14} /> 1emais.com.br</a>
                 <a href={CONTACT_URL} target="_blank" rel="noreferrer" data-testid="link-footer-whatsapp"><MessageCircle size={14} /> WhatsApp (17) 98817-3773</a>
               </div>
             </div>

@@ -1,5 +1,21 @@
 [
   {
+    "id": "f84q-sxaQ5Q",
+    "sistema": "locacao",
+    "titulo": "Resumo do Sistema de Locações",
+    "youtube_url": "https://www.youtube.com/embed/f84q-sxaQ5Q",
+    "descricao": "Conheça o resumo do sistema de locações de equipamentos.",
+    "categoria": "Locação"
+  },
+  {
+    "id": "NrDk3YyGkD0",
+    "sistema": "pos_vendas",
+    "titulo": "Resumo do Sistema de Pós-Vendas",
+    "youtube_url": "https://www.youtube.com/embed/NrDk3YyGkD0",
+    "descricao": "Conheça o resumo do sistema de pós-vendas para multipropriedade.",
+    "categoria": "Pós-Vendas"
+  },
+  {
     "id": "TJFWiH8wUl0",
     "sistema": "pos_vendas",
     "titulo": "Como fazer um pós-vendas pelo sistema 1e+9",
