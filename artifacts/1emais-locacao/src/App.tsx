@@ -17,6 +17,7 @@ import {
   FileText,
   LayoutDashboard,
   MessageCircle,
+  Package,
   PackageCheck,
   PartyPopper,
   Send,
@@ -476,8 +477,12 @@ function App() {
         <div className="switcher-inner">
           <div className="switcher-label"><strong>Escolha seu sistema</strong><span>Uma solução para cada operação</span></div>
           <div className="switcher-options" role="group" aria-label="Selecione um sistema">
-            <button className="switcher-option" type="button" aria-pressed={system === 'locacao'} onClick={() => setSystem('locacao')} data-testid="button-system-locacao">
-              <Tractor size={17} aria-hidden="true" /><span>Sistema de Locações de Equipamentos</span>
+            <button className="switcher-option switcher-option--rental" type="button" aria-pressed={system === 'locacao'} onClick={() => setSystem('locacao')} data-testid="button-system-locacao">
+              <Package size={18} aria-hidden="true" />
+              <span className="switcher-option-copy">
+                <strong>Sistema de Locações</strong>
+                <small>Equipamentos • Festas &amp; Eventos • Trajes • Almoxarifado</small>
+              </span>
             </button>
             <button className="switcher-option" type="button" aria-pressed={system === 'pos_vendas'} onClick={() => setSystem('pos_vendas')} data-testid="button-system-pos-vendas">
               <Building2 size={17} aria-hidden="true" /><span>Sistema de Pós-Vendas &amp; Multipropriedade</span>
