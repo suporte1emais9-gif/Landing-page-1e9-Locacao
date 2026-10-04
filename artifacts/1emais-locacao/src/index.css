@@ -548,6 +548,21 @@
 .faq-item summary svg { flex:none; color:#8e6715; transition:transform .2s ease; }
 .faq-item[open] summary svg { transform:rotate(90deg); }
 .faq-item > p { max-width:650px; margin:-5px 30px 22px 2px; color:#697385; font-size:13px; line-height:1.75; }
+.post-sales-faq { background:#e9e7de; }
+.post-sales-faq-heading { max-width:820px; margin-bottom:34px; }
+.post-sales-faq-heading h2 { max-width:800px; }
+.post-sales-faq-heading p { margin:0; color:#697385; font-size:15px; line-height:1.75; }
+.post-sales-faq .faq-list { max-width:960px; }
+.post-sales-faq-answer { max-width:860px; margin:0 30px 23px 2px; color:#697385; font-size:13px; line-height:1.75; }
+.post-sales-faq-answer p { margin:0 0 12px; color:inherit; font-size:inherit; line-height:inherit; }
+.post-sales-faq-answer p:last-child { margin-bottom:0; }
+.post-sales-faq-answer ul { display:grid; gap:7px; margin:0 0 13px; padding-left:22px; }
+.post-sales-faq-answer li { padding-left:3px; }
+@media (max-width: 680px) {
+  .post-sales-faq-heading { margin-bottom:26px; }
+  .post-sales-faq .faq-item summary { padding:18px 2px; font-size:14px; }
+  .post-sales-faq-answer { margin-right:3px; }
+}
 @media (max-width: 900px) {
   .workflow-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
   .modules-heading { align-items:flex-start; flex-direction:column; gap:17px; }

@@ -189,6 +189,39 @@ const rentalFaqs = [
   },
 ];
 
+const postSalesFaqs = [
+  {
+    question: 'Como o sistema me ajuda a controlar meu borderô e comissões?',
+    answer: 'O sistema gera gráficos e relatórios detalhados mês a mês de todas as suas comissões a receber. Ele permite projetar seus ganhos futuros e organizar suas contas com clareza total sobre o seu faturamento.',
+  },
+  {
+    question: 'Como funciona o pós-venda automatizado (D+2, D+10 e lembretes)?',
+    answer: (
+      <>
+        <p>As mensagens são enviadas automaticamente para o WhatsApp do seu cliente nos momentos certos:</p>
+        <ul>
+          <li>D+2 (2 dias após a venda): Mensagem de boas-vindas e parabéns pela aquisição.</li>
+          <li>D+10 (10 dias após a venda): Mensagem com o link da RCI ou outra intercambiadora para cadastro.</li>
+          <li>Lembretes mensais: Alertas automáticos de vencimento de boletos para manter a adimplência em dia.</li>
+        </ul>
+        <p><em>Todas as mensagens podem ser personalizadas e editadas por você a qualquer momento!</em></p>
+      </>
+    ),
+  },
+  {
+    question: 'Tenho muitos produtos e frações. O cadastro é demorado?',
+    answer: 'Não! Nosso time cuida dessa parte para você. Assim que criar sua conta, entre em contato pelo WhatsApp que injetamos os produtos e empreendimentos da sua empresa diretamente no seu usuário. Você só precisará ajustar os valores das semanas.',
+  },
+  {
+    question: 'O sistema ajuda a reduzir a inadimplência dos boletos?',
+    answer: 'Sim! O envio automático de lembretes de vencimento via WhatsApp garante que o cliente não esqueça de pagar as parcelas, mantendo seu borderô saudável e protegendo o recebimento das suas comissões.',
+  },
+  {
+    question: 'Como faço para começar a usar o 1e+9 agora mesmo?',
+    answer: 'É muito simples! Clique em "Faça seu teste grátis", cadastre seu nome e e-mail e confirme o link recebido (verifique a caixa de spam se necessário). Em seguida, nossa equipe mostra na tela exatamente como realizar suas primeiras configurações e vendas.',
+  },
+];
+
 function normalizeCategory(value: string) {
   return value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('pt-BR').trim();
 }
@@ -575,6 +608,28 @@ function PostSalesPage() {
                 <a className="button-primary" href={POST_SALES_TRIAL_URL} target="_blank" rel="noreferrer" data-testid="link-trial-pos-vendas-story">Faça seu teste grátis <ArrowRight size={16} /></a>
                 <a className="button-outline" href={CONTACT_URL} target="_blank" rel="noreferrer" data-testid="link-contact-pos-vendas-story"><MessageCircle size={16} /> Chamar no WhatsApp</a>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="section post-sales-faq" aria-labelledby="post-sales-faq-title" data-testid="post-sales-faq">
+          <div className="container">
+            <div className="section-heading post-sales-faq-heading">
+              <h2 id="post-sales-faq-title">Perguntas Frequentes sobre o Pós-Vendas &amp; Multipropriedade</h2>
+              <p>Tire suas dúvidas e veja como automatizar seu pós-venda para proteger suas comissões.</p>
+            </div>
+            <div className="faq-list">
+              {postSalesFaqs.map(({ question, answer }, index) => (
+                <details className="faq-item" key={question} data-testid={`post-sales-faq-item-${index + 1}`}>
+                  <summary>
+                    <span>{question}</span>
+                    <ChevronRight size={18} aria-hidden="true" />
+                  </summary>
+                  <div className="post-sales-faq-answer">
+                    {typeof answer === 'string' ? <p>{answer}</p> : answer}
+                  </div>
+                </details>
+              ))}
             </div>
           </div>
         </section>
